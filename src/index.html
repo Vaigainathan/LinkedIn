@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://in.linkedin.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="../images/logo.webp" class="h-8" alt="Flowbite Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a href="https://www.linkedin.com"><button type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+            started</button></a>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+          </li>
+          <li>
+            <a href="#Features"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a href="#testimonial"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Testimonial</a>
+          </li>
+          <li>
+            <a href="#cta"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Download</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bg-white">
+    <header class="bg-[#FCF8F1] bg-opacity-30">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+          <div class="flex-shrink-0">
+            <a href="#" title="" class="flex">
+              <img class="w-auto h-8" src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg" alt="" />
+            </a>
+          </div>
+
+          <button type="button"
+            class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+
+          <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+            <a href="#about" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">
+              About </a>
+
+            <a href="#Feature" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">
+              Services </a>
+
+            <a href="#testimonial" title=""
+              class="text-base text-black transition-all duration-200 hover:text-opacity-80">
+              Testimonial</a>
+
+            <a href="#cta" title="" class="text-base text-black transition-all duration-200 hover:text-opacity-80">
+              Download</a>
+            </a>
+          </div>
+
+          <a href="https://www.linkedin.com/feed/" title=""
+            class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+            role="button"> Join Now </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:py-8">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+          <div>
+            <p class="text-base font-semibold tracking-wider text-blue-600 uppercase">Grow Your Career & Network with
+              Industry Leaders</p>
+            <h1 class="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">Connect & learn from the
+              experts</h1>
+            <p class="mt-4 text-base text-black lg:mt-8 sm:text-xl">Join millions of professionals on LinkedIn.Build
+              connections, discover career opportunities, and unlock new possibilities <br> <span
+                class="text-blue-600 font-semibold">all in one powerful platform.</span>
+            <p>
+
+              <a href="https://www.linkedin.com/feed/" title=""
+                class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                role="button">
+                Join for free
+                <svg class="w-6 h-6 ml-8 -mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </a>
+            <div class="mt-5 inline-flex space-x-4">
+              <a href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en_IE&gl=US"
+                target="_blank">
+                <img class="mt-5 h-15"
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Play Store" class="store-badge">
+              </a>
+              <a href="https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040" target="_blank">
+                <img class="mt-5 h-15"
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                  alt="App Store" class="store-badge">
+              </a>
+            </div>
+
+            <p class="mt-5 text-gray-600">Over 1 billion professionals are already networking on LinkedIn.<br> Don’t get
+              left behind, <a href="https://www.linkedin.com/feed/" title=""
+                class="text-black transition-all duration-200 hover:underline">log in now</a></p>
+          </div>
+
+          <div>
+            <img class="w-full"
+              src="https://content.linkedin.com/content/dam/me/members/en-us/icons/share-stories-image.png.original.png"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-10 bg-gray sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
+      <div class="max-w-8xl mx-auto text-center">
+        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Access all the benefits of
+          LinkedIn – anytime, anywhere</h2>
+        <p class="max-w-200 mx-auto mt-6 text-2xl leading-relaxed text-gray-800">No matter what ‘on the go’ means for
+          you, with the LinkedIn app, opportunity is never out of reach. You can search and apply for jobs, catch up on
+          the latest news or keep in touch with friends and colleagues.</p>
+
+        <div class="mt-5 inline-flex space-x-4 justify-center">
+          <a href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en_IE&gl=US" target="_blank">
+            <img class="mt-5 h-15"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"
+              class="store-badge">
+          </a>
+          <a href="https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040" target="_blank">
+            <img class="mt-5 h-15"
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+              alt="App Store" class="store-badge">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="Features" class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How does it helps?</h2>
+    </div>
+    <div class="px-4 mx-auto mt-8 max-w-7xl sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 text-center sm:grid-cols-2 gap-y-8 lg:grid-cols-4 sm:gap-12">
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-blue-300 rounded-full">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+            </svg>
+
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">Search Job </h3>
+          <p class="mt-4 text-sm text-gray-600"> Find your dream job with millions of listings from top companies
+            worldwide. Use advanced filters to search by location, industry, experience level, and more.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-orange-300 rounded-full">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M8.64 4.737A7.97 7.97 0 0 1 12 4a7.997 7.997 0 0 1 6.933 4.006h-.738c-.65 0-1.177.25-1.177.9 0 .33 0 2.04-2.026 2.008-1.972 0-1.972-1.732-1.972-2.008 0-1.429-.787-1.65-1.752-1.923-.374-.105-.774-.218-1.166-.411-1.004-.497-1.347-1.183-1.461-1.835ZM6 4a10.06 10.06 0 0 0-2.812 3.27A9.956 9.956 0 0 0 2 12c0 5.289 4.106 9.619 9.304 9.976l.054.004a10.12 10.12 0 0 0 1.155.007h.002a10.024 10.024 0 0 0 1.5-.19 9.925 9.925 0 0 0 2.259-.754 10.041 10.041 0 0 0 4.987-5.263A9.917 9.917 0 0 0 22 12a10.025 10.025 0 0 0-.315-2.5A10.001 10.001 0 0 0 12 2a9.964 9.964 0 0 0-6 2Zm13.372 11.113a2.575 2.575 0 0 0-.75-.112h-.217A3.405 3.405 0 0 0 15 18.405v1.014a8.027 8.027 0 0 0 4.372-4.307ZM12.114 20H12A8 8 0 0 1 5.1 7.95c.95.541 1.421 1.537 1.835 2.415.209.441.403.853.637 1.162.54.712 1.063 1.019 1.591 1.328.52.305 1.047.613 1.6 1.316 1.44 1.825 1.419 4.366 1.35 5.828Z"
+                clip-rule="evenodd" />
+            </svg>
+
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">Professional Networking</h3>
+          <p class="mt-4 text-sm text-gray-600"> Connect with industry leaders, recruiters, and professionals to build
+            meaningful relationships. Expand your business and career network globally.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-green-300 rounded-full">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M11 4.717c-2.286-.58-4.16-.756-7.045-.71A1.99 1.99 0 0 0 2 6v11c0 1.133.934 2.022 2.044 2.007 2.759-.038 4.5.16 6.956.791V4.717Zm2 15.081c2.456-.631 4.198-.829 6.956-.791A2.013 2.013 0 0 0 22 16.999V6a1.99 1.99 0 0 0-1.955-1.993c-2.885-.046-4.76.13-7.045.71v15.081Z"
+                clip-rule="evenodd" />
+            </svg>
+
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">LinkedIn Learning</h3>
+          <p class="mt-4 text-sm text-gray-600">Gain in-demand skills with thousands of expert-led courses in business,
+            technology, marketing, and more to boost your career growth.</p>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-center w-20 h-20 mx-auto bg-red-300 rounded-full">
+            <svg class="w-8 h-8 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M14.516 6.743c-.41-.368-.443-1-.077-1.41a.99.99 0 0 1 1.405-.078l5.487 4.948.007.006A2.047 2.047 0 0 1 22 11.721a2.06 2.06 0 0 1-.662 1.51l-5.584 5.09a.99.99 0 0 1-1.404-.07 1.003 1.003 0 0 1 .068-1.412l5.578-5.082a.05.05 0 0 0 .015-.036.051.051 0 0 0-.015-.036l-5.48-4.942Zm-6.543 9.199v-.42a4.168 4.168 0 0 0-2.715 2.415c-.154.382-.44.695-.806.88a1.683 1.683 0 0 1-2.167-.571 1.705 1.705 0 0 1-.279-1.092V15.88c0-3.77 2.526-7.039 5.967-7.573V7.57a1.957 1.957 0 0 1 .993-1.838 1.931 1.931 0 0 1 2.153.184l5.08 4.248a.646.646 0 0 1 .012.011l.011.01a2.098 2.098 0 0 1 .703 1.57 2.108 2.108 0 0 1-.726 1.59l-5.08 4.25a1.933 1.933 0 0 1-2.929-.614 1.957 1.957 0 0 1-.217-1.04Z"
+                clip-rule="evenodd" />
+            </svg>
+
+          </div>
+          <h3 class="mt-8 text-lg font-semibold text-black">Content Sharing</h3>
+          <p class="mt-4 text-sm text-gray-600">Publish articles, posts, and videos to share insights, showcase
+            expertise, and engage with a global audience on professional topics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- How does it work Section -->
+<section id="works" class="py-10 bg-white sm:py-16 lg:py-24">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">How does it work?</h2>
+      <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Start connecting, learning, and planning for the future.</p>
+    </div>
+
+    <div class="relative mt-12 lg:mt-24">
+      <div class="relative grid grid-cols-1 text-center gap-y-12 md:grid-cols-3 gap-x-0">
+        <div class="flex flex-col items-center">
+          <div class="relative flex items-center justify-center w-48 h-48">
+            <img class="w-48 h-48 rounded-full object-cover" 
+              src="https://content.linkedin.com/content/dam/me/members/en-us/reference/update-your-profile-1x.png.original.png" 
+              alt="Update your profile" />
+          </div>
+          <div class="flex items-center justify-center w-16 h-16 bg-white border-2 border-gray-200 rounded-full shadow mt-4">
+            <span class="text-xl font-semibold text-gray-700">1</span>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold leading-tight text-black">Update your profile</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="relative flex items-center justify-center w-48 h-48">
+            <img class="w-48 h-48 rounded-full object-cover" 
+              src="https://content.linkedin.com/content/dam/me/members/en-us/reference/messaging-and-connections-1x.png.original.png" 
+              alt="Build your network" />
+          </div>
+          <div class="flex items-center justify-center w-16 h-16 bg-white border-2 border-gray-200 rounded-full shadow mt-4">
+            <span class="text-xl font-semibold text-gray-700">2</span>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold leading-tight text-black">Build your network</h3>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="relative flex items-center justify-center w-48 h-48">
+            <img class="w-48 h-48 rounded-full object-cover" 
+              src="https://content.linkedin.com/content/dam/me/members/en-us/reference/job-search-and-apply-1x.png.original.png" 
+              alt="Find a job" />
+          </div>
+          <div class="flex items-center justify-center w-16 h-16 bg-white border-2 border-gray-200 rounded-full shadow mt-4">
+            <span class="text-xl font-semibold text-gray-700">3</span>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold leading-tight text-black">Find a job</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- User Satisfied Counter Section -->
+  <section id="users" class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+        <div>
+          <h3 class="font-bold text-7xl">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">1+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">Billion</p>
+          <p class="text-base mt-0.5 text-gray-500">Professionals Connected</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-7xl">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 20+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">Million </p>
+          <p class="text-base mt-0.5 text-gray-500">Job Listings Available</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-7xl">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 134+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">Million </p>
+          <p class="text-base mt-0.5 text-gray-500">Professionals Engage Every Day</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-7xl mt-4 space-x-4">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 6+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">People</p>
+          <p class="text-base mt-0.5 text-gray-500"> Hired per Minute via LinkedIn</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-7xl mt-4 space-x-4">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 1+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">Billion</p>
+          <p class="text-base mt-0.5 text-gray-500"> Interactions on Posts & Articles</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-7xl mt-4 space-x-4">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> 17,000+ </span>
+          </h3>
+          <p class="mt-4 text-xl font-medium text-gray-900">Expert-Led Courses to Upskill</p>
+          <p class="text-base mt-0.5 text-gray-500">LinkedIn Learning </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Testimonial Section -->
+  <section id="testimonial" class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">What our customers say</h2>
+        <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">The world of work in your pocket</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Darrell Steward</p>
+                <p class="text-sm text-gray-600 truncate">@darrels</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                choose the page, make the change and click save.
+                <span class="block text-sky-500">#another</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Leslie Alexander</p>
+                <p class="text-sm text-gray-600 truncate">@lesslie</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.
+                <span class="block text-sky-500">#Celebration</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-3.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Jenny Wilson</p>
+                <p class="text-sm text-gray-600 truncate">@jennywilson</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                This is a top quality product. No need to think twice before making it live on web.
+                <span class="block text-sky-500">#make_it_fast</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-4.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Kristin Watson</p>
+                <p class="text-sm text-gray-600 truncate">@kristinwatson2</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                YFinally, I’ve found a template that covers all bases for a bootstrapped startup. We were able to launch
+                in days, not months.
+                <span class="block text-sky-500">#Celebration</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-5.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Guy Hawkins</p>
+                <p class="text-sm text-gray-600 truncate">@jennywilson</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                This is a top quality product. No need to think twice before making it live on web.
+                <span class="block text-sky-500">#make_it_fast</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-6.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Marvin McKinney</p>
+                <p class="text-sm text-gray-600 truncate">@darrels</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                With Celebration, it’s quicker with the customer, the customer is more ensured of getting exactly what
+                they ordered, and I’m all for the efficiency.
+                <span class="block text-sky-500">#dev #tools</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-7.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Annette Black</p>
+                <p class="text-sm text-gray-600 truncate">@darrels</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                choose the page, make the change and click save.
+                <span class="block text-sky-500">#another</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="overflow-hidden bg-white rounded-md">
+          <div class="px-5 py-6">
+            <div class="flex items-center justify-between">
+              <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-8.jpg" alt="" />
+              <div class="min-w-0 ml-3 mr-auto">
+                <p class="text-base font-semibold text-black truncate">Floyd Miles</p>
+                <p class="text-sm text-gray-600 truncate">@darrels</p>
+              </div>
+              <a href="#" title="" class="inline-block text-sky-500">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+            <blockquote class="mt-5">
+              <p class="text-base text-gray-800">
+                My new site is so much faster and easier to work with than my old site. I just choose the page, make the
+                change and click save.
+                <span class="block text-sky-500">#Celebration</span>
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-10 bg-white sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="flex items-center justify-center">
+          <div class="w-20 h-20 -mr-6 overflow-hidden bg-gray-300 rounded-full">
+            <img class="object-cover w-full h-full"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/female-avatar-1.jpg" alt="" />
+          </div>
+
+          <div class="relative overflow-hidden bg-gray-300 border-8 border-white rounded-full w-28 h-28">
+            <img class="object-cover w-full h-full"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/male-avatar-1.jpg" alt="" />
+          </div>
+
+          <div class="w-20 h-20 -ml-6 overflow-hidden bg-gray-300 rounded-full">
+            <img class="object-cover w-full h-full"
+              src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/2/female-avatar-2.jpg" alt="" />
+          </div>
+        </div>
+
+        <h2 class="mt-8 text-3xl font-bold leading-tight text-black lg:mt-12 sm:text-4xl lg:text-5xl">Join <span
+            class="border-b-8 border-yellow-300">1 Billion+</span> other professionals</h2>
+        <p class="max-w-xl mx-auto mt-6 text-xl text-gray-600 md:mt-10">All the benefits of LinkedIn – anytime, anywhere
+        </p>
+        <p class="max-w-xl mx-auto mt-6 text-xl text-gray-600 md:mt-10">Download the app in the App Store or Google Play
+          Store.</p>
+
+        <div class="mt-5 inline-flex space-x-4 justify-center">
+          <a href="https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en_IE&gl=US" target="_blank">
+            <img class="mt-5 h-15"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store"
+              class="store-badge">
+          </a>
+          <a href="https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040" target="_blank">
+            <img class="mt-5 h-15"
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+              alt="App Store" class="store-badge">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <section class="py-12 bg-gray-900 sm:py-4 lg:py-8">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+      <div class="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
+        <div class="xl:flex xl:items-center xl:justify-start">
+
+
+          <img src="../images/logo.webp" class="h-6" alt="Flowbite Logo">
+          <p class="mt-5 text-sm text-white xl:ml-6 xl:mt-0">© Copyright 2025</p>
+        </div>
+
+        <div class="items-center mt-8 xl:mt-0 xl:flex xl:justify-end xl:space-x-8">
+          <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 xl:justify-end">
+            <li>
+              <a href="https://about.linkedin.com/" title=""
+                class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                About </a>
+            </li>
+
+            <li>
+              <a href="#Feature" title=""
+                class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                Services </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/legal/privacy-policy?src=direct%2Fnone&veh=direct%2Fnone%7Cdirect%2Fnone"
+                title=""
+                class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                Privacy Policy </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/legal/user-agreement?src=direct%2Fnone&veh=direct%2Fnone%7Cdirect%2Fnone"
+                title=""
+                class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                Terms & Conditions </a>
+            </li>
+
+            <li>
+              <a href="#" title=""
+                class="text-sm text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                Support </a>
+            </li>
+          </ul>
+
+          <div class="w-full h-px mt-8 mb-5 xl:w-px xl:m-0 xl:h-6 bg-gray-50/20"></div>
+
+          <ul class="flex items-center justify-center space-x-8 xl:justify-end">
+            <li>
+              <a href="#" title=""
+                class="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" title=""
+                class="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" title=""
+                class="block text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                  </path>
+                  <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                  <path
+                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
